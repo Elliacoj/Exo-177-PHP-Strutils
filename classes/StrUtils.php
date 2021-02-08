@@ -112,6 +112,8 @@ class StrUtils
     }
 
     /**
+     *
+     */
     public function uglify() {
         if($this->bold === true) {
             $this->str = "<b>" . $this->str . "</b>";
