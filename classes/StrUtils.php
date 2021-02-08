@@ -21,6 +21,9 @@ class StrUtils
         $this->setCapitalize(false);
     }
 
+    /**
+     * @return string
+     */
     public function __toString()
     {
         return $this->getStr();
@@ -108,8 +111,7 @@ class StrUtils
         $this->capitalize = $capitalize;
     }
 
-
-
+    /**
     public function uglify() {
         if($this->bold === true) {
             $this->str = "<b>" . $this->str . "</b>";
@@ -129,18 +131,30 @@ class StrUtils
 
     }
 
+    /**
+     * @param bool $bold
+     */
     public function bold(bool $bold) {
         $this->setBold($bold);
     }
 
+    /**
+     * @param bool $italic
+     */
     public function italic(bool $italic) {
         $this->setItalic($italic);
     }
 
+    /**
+     * @param bool $underline
+     */
     public function underline(bool $underline) {
         $this->setUnderline($underline);
     }
 
+    /**
+     * @param bool $capitalize
+     */
     public function capitalize(bool $capitalize) {
         $this->setItalic($capitalize);
     }
